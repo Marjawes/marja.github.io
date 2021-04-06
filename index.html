@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href= "style.css">
+    
+    <title>
+        PRESIDENCIÁVEIS 1989
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">PRESIDENCIÁVEIS 1989 - Super Trunfo</h1>
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+        <button type="button" id="btnAjuda" onclick="exibeAjuda()"> Ajuda </button>
+        <form id="form">
+            <div class="wrapper">
+              <div id="quantidade-cartas"></div>  
+              <div id="placar"></div>
+               <h2>Selecione o atributo do candidato na imagem abaixo:</h2>
+               <h3>Carta Jogador / Carta Máquina</h3>
+                <div id="cartas">
+                    <div id="carta-jogador" class="carta"></div>
+                    <div id="carta-maquina" class="carta"></div></div>
+                </div>
+                     <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()"
+                disabled="false">Jogar</button>
+        <button type="button" id="btnProximaRodada" onclick="proximaRodada()" disabled="true">Próxima rodada</button>
+        <div id="resultado"></div>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>  
+
+</html>
